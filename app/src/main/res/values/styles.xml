@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="singleTouchTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="mainBottomBarToggleButton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:textOff">@null</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorBottomTabNoSelect</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="transparentStatusBar" parent="singleTouchTheme">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

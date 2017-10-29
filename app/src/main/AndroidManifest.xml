@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wjr.toybox">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+
+                <!-- 默认启动的activity -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 这条必须加，自定义action才能被外部调用 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="action.test" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".service.local.counterservice.LocalServiceActivity" />
+        <activity android:name=".service.remote.pushmessageservice.MessageServiceActivity" />
+        <activity android:name=".network.httpconnection.AccessURLActivity" />
+        <activity android:name=".async.DownLoadFileActivity" />
+        <activity android:name=".widget.viewPager.fragment.ViewPagerFragmentActivity" />
+        <activity android:name=".widget.fountainAnimation.FountainAnimationActivity" />
+        <activity android:name=".widget.coordinatorLayout.ViewPagerFragmentCoordinatorActivity" />
+        <activity android:name=".widget.bottomNavigationBar.ViewPagerFragmentBottomNavigationBarActivity" />
+        <activity android:name=".widget.customBottomNavigationBar.ViewPagerFragmentCustomBottomNavigationActivity" />
+        <activity android:name=".dispatchTouchEvent.DispatchTouchEventActivity" />
+        <activity android:name=".widget.customEmojiEditTextView.CustomEmojiEditTextActivity" />
+        <activity android:name=".effect.drawerLayout.DemoDrawerLayout" />
+        <activity android:name=".widget.mulItemTypeRecyclerView.MulTypeRecyclerViewActivity" />
+        <activity
+            android:name=".widget.transparentStatusBar.TransparentStatusBarActivity"
+            android:theme="@style/transparentStatusBar" />
+        <activity android:name=".widget.behavior.textFellowBtnBehavior.TextFellowBtnBehaviorActivity" />
+        <activity android:name=".thirdlyProvider.helloCharts.HelloChartDemoActivity" />
+        <activity android:name=".widget.behavior.UCShrinkBehavior.UcShrinkBehaviorActivity" />
+
+        <service android:name=".service.remote.pushmessageservice.MessageManagerService">
+            <intent-filter>
+                <action android:name="com.wjr.aidl.sentMessageService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".effect.slideDeletion.SlideDeletionActivity"
+            android:theme="@style/singleTouchTheme" />
+        <activity
+            android:name=".effect.slideDeleteAbstract.SlideDeleteAbstractActivity"
+            android:theme="@style/singleTouchTheme" />
+        <activity android:name=".jobscheduler.MyJobscheduler" />
+        <activity android:name=".databinding.DataBindingDemo" />
+        <activity android:name=".service.remote.counterservice.CountServiceActivity" />
+
+        <service
+            android:name=".service.remote.counterservice.CountService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wjr.aidl.count" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".socket.SocketActivity" />
+        <activity android:name=".bitmap.BitmapActivity" />
+    </application>
+
+</manifest>

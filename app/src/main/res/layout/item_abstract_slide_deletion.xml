@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjr.toybox.effect.slideDeleteAbstract.SlideDeletionGenLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="64dp"
+    >
+    <FrameLayout
+        android:id="@+id/customLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <com.wjr.toybox.effect.slideDeleteAbstract.SlideDeletionDeleteView
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:id="@+id/delete"
+        android:text="删除"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        />
+</com.wjr.toybox.effect.slideDeleteAbstract.SlideDeletionGenLinearLayout>

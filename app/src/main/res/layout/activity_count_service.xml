@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data >
+        <variable
+            name="counter"
+            type="com.wjr.toybox.service.remote.counterservice.Count"/>
+        <variable
+            name="startClickLsr"
+            type="com.wjr.toybox.service.remote.counterservice.CountServiceActivity.onStartClickListener"/>
+
+        <variable
+            name="stopClickLsr"
+            type="com.wjr.toybox.service.remote.counterservice.CountServiceActivity.onStopClickListener"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(counter.duration)}"
+            />
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(counter.count)}"
+            app:layout_constraintTop_toBottomOf="@id/duration"
+            android:layout_marginTop="16dp"
+            />
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            app:layout_constraintTop_toBottomOf="@id/count"
+            android:onClick="@{startClickLsr}"
+            />
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            app:layout_constraintTop_toBottomOf="@id/start"
+            android:onClick="@{stopClickLsr}"
+            />
+    </android.support.constraint.ConstraintLayout>
+</layout>

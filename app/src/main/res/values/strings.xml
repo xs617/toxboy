@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ToyBox</string>
+    <string name="count_value">计数值：%d</string>
+
+    <string name="home_page">首页</string>
+    <string name="plans_centre">课程中心</string>
+    <string name="my_plans">我的课程</string>
+    <string name="about_me">我</string>
+    <string name="inner_left">左页</string>
+    <string name="inner_right">右页</string>
+    <string name="text_fellow_btn_behavior" translatable="false">com.wjr.toybox.widget.behavior.textFellowBtnBehavior.TextFellowBtnBehavior</string>
+    <string name="uc_shrink_behavior" translatable="false">com.wjr.toybox.widget.behavior.UCShrinkBehavior.UcShrinkBehavior</string>
+    <string name="title_activity_intent_service">IntentServiceActivity</string>
+    <string name="title_activity_socket_v">SocketVActivity</string>
+
+
+</resources>

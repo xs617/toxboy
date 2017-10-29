@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="toys_name">
+        <!--<item>"fountainAnimation"</item>-->
+        <item>"插入图片 "</item>
+        <!--<item>"local counter service "</item>-->
+        <!--<item>"remote message service "</item>-->
+        <item>"url connection"</item>
+        <item>"download file"</item>
+        <item>"Hello Chart Demo"</item>
+        <item>"viewpager and fragment"</item>
+        <item>"viewpager and fragment and coordinatorLayout"</item>
+        <item>"viewpager and fragment and coordinatorLayout and navigation"</item>
+        <!--<item>"viewpager and fragment and custom navigation"</item>-->
+        <item>"Mul Type RecyclerView "</item>
+        <item>"Transparent StatusBar "</item>
+        <item>"FellowTextBehavior"</item>
+        <item>"UCShrinkBehavior"</item>
+        <!--<item>"slide deletion"</item>-->
+        <item>"abstract slide deletion"</item>
+        <item>"drawer layout demo"</item>
+        <item>"data binding demo"</item>
+        <!--<item>"touchEventDispatch"</item>-->
+        <!--<item>"start mainActivity"</item>-->
+        <!--<item>"recycle view"</item>-->
+        <!--<item>"elastic scroll view"</item>-->
+        <!--<item>"cycle play banner"</item>-->
+        <item>"remote count service"</item>
+        <item>"surface View"</item>
+        <item>"socket"</item>
+        <item>"bitmap"</item>
+
+    </string-array>
+
+    <string-array name="toys_activity">
+        <!--<item>com.wjr.toybox.widget.fountainAnimation.FountainAnimationActivity</item>-->
+        <item>com.wjr.toybox.widget.customEmojiEditTextView.CustomEmojiEditTextActivity</item>
+        <!--<item>com.wjr.toybox.service.local.counterservice.LocalServiceActivity</item>-->
+        <!--<item>com.wjr.toybox.service.remote.pushmessageservice.MessageServiceActivity</item>-->
+        <item>com.wjr.toybox.network.httpconnection.AccessURLActivity</item>
+        <item>com.wjr.toybox.async.DownLoadFileActivity</item>
+        <item>com.wjr.toybox.thirdlyProvider.helloCharts.HelloChartDemoActivity</item>
+        <item>com.wjr.toybox.widget.viewPager.fragment.ViewPagerFragmentActivity</item>
+        <item>com.wjr.toybox.widget.coordinatorLayout.ViewPagerFragmentCoordinatorActivity</item>
+        <item>com.wjr.toybox.widget.bottomNavigationBar.ViewPagerFragmentBottomNavigationBarActivity</item>
+        <!--<item>com.wjr.toybox.widget.customBottomNavigationBar.ViewPagerFragmentCustomBottomNavigationActivity</item>-->
+        <item>com.wjr.toybox.widget.mulItemTypeRecyclerView.MulTypeRecyclerViewActivity</item>
+        <item>com.wjr.toybox.widget.transparentStatusBar.TransparentStatusBarActivity</item>
+        <item>com.wjr.toybox.widget.behavior.textFellowBtnBehavior.TextFellowBtnBehaviorActivity</item>
+        <item>com.wjr.toybox.widget.behavior.UCShrinkBehavior.UcShrinkBehaviorActivity</item>
+        <!--<item>com.wjr.toybox.effect.slideDeletion.SlideDeletionActivity</item>-->
+        <item>com.wjr.toybox.effect.slideDeleteAbstract.SlideDeleteAbstractActivity</item>
+        <item>com.wjr.toybox.effect.drawerLayout.DemoDrawerLayout</item>
+        <item>com.wjr.toybox.databinding.DataBindingDemo</item>
+        <!--<item>com.wjr.toybox.dispatchTouchEvent.DispatchTouchEventActivity</item>-->
+        <!--<item>com.wjr.toybox.MainActivity</item>-->
+        <item>com.wjr.toybox.service.remote.counterservice.CountServiceActivity</item>
+        <item>com.wjr.toybox.widget.surfaceView.SurfaceViewActivity</item>
+        <item>com.wjr.toybox.socket.SocketActivity</item>
+        <item>com.wjr.toybox.bitmap.BitmapActivity</item>
+    </string-array>
+
+    <string-array name="main_bottom_tab_ids">
+        <item>@id/home_page</item>
+        <item>@id/plans_centre</item>
+        <item>@id/my_plans</item>
+        <item>@id/about_me</item>
+    </string-array>
+</resources>

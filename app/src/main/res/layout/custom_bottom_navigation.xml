@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/bottom_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/shape_default_bg"
+    >
+    <ToggleButton
+        android:id="@+id/home_page"
+        android:drawableTop="@mipmap/navigation_item_1"
+        android:text="@string/home_page"
+        style="@style/mainBottomBarToggleButton"
+        />
+    <ToggleButton
+        android:id="@+id/plans_centre"
+        android:drawableTop="@mipmap/navigation_item_2"
+        android:text="@string/plans_centre"
+        style="@style/mainBottomBarToggleButton"
+        />
+
+    <ToggleButton
+        android:id="@+id/my_plans"
+        android:drawableTop="@mipmap/navigation_item_3"
+        android:text="@string/my_plans"
+        style="@style/mainBottomBarToggleButton"
+        />
+    <ToggleButton
+        android:id="@+id/about_me"
+        android:drawableTop="@mipmap/navigation_item_4"
+        android:text="@string/about_me"
+        style="@style/mainBottomBarToggleButton"
+        />
+</LinearLayout>
